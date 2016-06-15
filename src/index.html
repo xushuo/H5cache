@@ -15,27 +15,36 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--
-        H5 本地存储方式
-         localStorage：
-            使用注意：
+
+        <article>
+            <section>
+           H5 本地存储方式
+                localStorage：
+                使用注意：
                 1：使用前要判断浏览器是否支持
                 2：写数据的时候，需要异常处理，避免超出容量抛出异常
                 3：避免把敏感信息存到localStorage
                 4：保持KEY的唯一性
-            使用限制：
+                使用限制：
                 1：存储更新策略，过期控制
                 2：子域名之间不能共享存储数据
                 3：超出存储大小之后如何存储(LRU,FIFO算法)
                 4：server端 如何取到
-         Web sql( indexedDB)
+                Web sql( indexedDB)
 
-         offfline application H5离线缓存
+                offfline application H5离线缓存
+                1：如果有修改资源文件，必须通过修改manifest文件来刷新缓存的文件列表
+                2：更新是全局性的，无法单独更新某个文件。
+                3：文件更新后，需要页面再次刷新。（需要刷新2次才能获取新资源）
+                4：对于链接参数敏感。例如get后面带参数不同，被视为两个页面。
+                使用场景：
+                1：单地址页面
+                2：对实时性要求不高的业务
+                3：离线webapp
 
+            </section>
+        </article>
 
-
-
-         -->
         <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
