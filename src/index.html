@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--
+        H5 本地存储方式
+         localStorage：
+            使用注意：
+                1：使用前要判断浏览器是否支持
+                2：写数据的时候，需要异常处理，避免超出容量抛出异常
+                3：避免把敏感信息存到localStorage
+                4：保持KEY的唯一性
+            使用限制：
+                1：存储更新策略，过期控制
+                2：子域名之间不能共享存储数据
+                3：超出存储大小之后如何存储(LRU,FIFO算法)
+                4：server端 如何取到
+         Web sql( indexedDB)
+
+         offfline application H5离线缓存
+
+
+
+
+         -->
+        <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
